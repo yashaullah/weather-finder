@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyCheck - Weather Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="logo" href="#">SkyCheck<span>.</span></a>
+      <a class="back" href="../index.html">All projects</a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="heading">Weather <span>Finder</span></h1>
+
+    <form id="searchForm" class="search-row">
+      <input type="text" id="cityInput" placeholder="Enter a city name, e.g. Karachi" required>
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    <p id="message"></p>
+
+    <div id="result" class="hidden">
+      <div class="card today-card">
+        <div class="card-inner">
+          <h2 id="cityName"></h2>
+          <div class="today-row">
+            <div class="big-icon" id="icon"></div>
+            <div>
+              <div class="temp" id="temp"></div>
+              <div id="desc"></div>
+            </div>
+          </div>
+          <div class="details">
+            <div><span>Feels like</span><strong id="feels"></strong></div>
+            <div><span>Humidity</span><strong id="humidity"></strong></div>
+            <div><span>Wind</span><strong id="wind"></strong></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="sub-heading">Next 5 <span>Days</span></h2>
+      <div class="days" id="days"></div>
+    </div>
+  </main>
+
+  <footer>Web Technologies project – HTML, CSS and JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
